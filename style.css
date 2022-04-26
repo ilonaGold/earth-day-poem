@@ -1,0 +1,32 @@
+:root {
+    --violet-blue: #294dafff;
+    --light-green: #ccd770;
+    --border-rad-5: 5px;
+    --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --font-family: 'Karla', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    background: var(--violet-blue) url('images/earth.svg') no-repeat center/ 100% 100%;
+}
+
+.poem {
+    width: 22.5%;
+    text-align: center;
+    background: var(--light-green);
+    padding: 0.5rem;
+    border-radius: var(--border-rad-5);
+    box-shadow: var(--box-shadow);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 450px) {
+  .poem {
+    padding: 2rem;
+  }
+}
